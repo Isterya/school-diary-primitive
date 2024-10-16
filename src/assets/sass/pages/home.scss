@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+
+@import '../base/main';
+
+.promo {
+   position: relative;
+
+   &__img {
+      img {
+         border-radius: 15px;
+         width: 100%;
+      }
+   }
+
+   &__content {
+      position: absolute;
+      left: 64px;
+      bottom: -64px;
+      border: 1px solid #242535;
+      border-radius: 12px;
+      padding: 40px;
+      width: 598px;
+      height: 230px;
+      box-shadow: 0 12px 24px -6px rgba(24, 26, 42, 0.12);
+      background: #181a2a;
+   }
+
+   &__tag {
+      border-radius: 6px;
+      padding: 4px 10px;
+      width: 221px;
+      height: 29px;
+      background: #4b6bfb;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+   }
+
+   &__title {
+      margin-top: 16px;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 40px;
+      color: #fff;
+   }
+
+   &__meta {
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+   }
+
+   &-avatar {
+      border-radius: 28px;
+      width: 36px;
+      height: 36px;
+      margin-right: 12px;
+   }
+
+   &__author {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: $author-color;
+      margin-right: 20px;
+   }
+
+   &__date {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $author-color;
+   }
+}
+
+.info {
+   padding: 108px 0 108px 0;
+
+   &__list-wrapper {
+      margin-top: 16px;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      height: 200px;
+
+      &::before,
+      &::after {
+         @include dark-gradient;
+         content: '';
+         height: 200px;
+         position: absolute;
+         width: 200px;
+         z-index: 2;
+      }
+
+      &::after {
+         right: 0;
+         top: 0;
+         transform: rotateZ(180deg);
+      }
+
+      &::before {
+         left: 0;
+         top: 0;
+      }
+   }
+
+   &__list {
+      display: flex;
+      animation: scroll $animationSpeed linear infinite;
+      width: calc(250px * 7);
+   }
+
+   &__card {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: linear-gradient(135deg, #181a2a 0%, #242535 100%);
+      background-size: 200% 200%;
+      border-radius: 12px;
+      padding: 12px;
+      margin-right: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      width: 250px;
+      transition: background-position 0.3s ease;
+
+      &:hover {
+         background-position: 100% 0;
+      }
+
+      h3 {
+         text-align: center;
+      }
+
+      img {
+         width: 32px;
+         height: auto;
+         margin-bottom: 12px;
+      }
+   }
+
+   &__header {
+      font-weight: 600;
+      font-size: 22px;
+      color: #fff;
+   }
+
+   &__descr {
+      margin-top: 16px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: $article-text-color;
+   }
+
+   &__summary {
+      margin-top: 16px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: $article-text-color;
+   }
+}
+
+@media (max-width: 1200px) {
+   .promo {
+      &__tag {
+         width: 278px;
+         font-size: 18px;
+      }
+   }
+}
+
+@media (max-width: 992px) {
+   .info {
+      padding: 108px 0 75px 0;
+
+      &__header {
+         font-size: 20px;
+      }
+
+      &__descr {
+         font-size: 17px;
+      }
+
+      &__summary {
+         font-size: 17px;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .promo {
+      &__content {
+         padding: 30px;
+         width: 414px;
+         height: 195px;
+      }
+
+      &__tag {
+         width: 221px;
+         font-size: 14px;
+      }
+
+      &__title {
+         font-size: 30px;
+      }
+   }
+
+   .info {
+      &__descr {
+         font-size: 16px;
+      }
+
+      &__summary {
+         font-size: 16px;
+      }
+   }
+}
+
+@media (max-width: 576px) {
+   .promo {
+      display: flex;
+      flex-direction: column;
+
+      &__content {
+         position: relative;
+         width: 100%;
+         height: auto;
+         left: 0px;
+         bottom: 0px;
+      }
+
+      &__title {
+         font-size: 26px;
+      }
+   }
+
+   .info {
+      padding: 40px 0 75px 0;
+   }
+}

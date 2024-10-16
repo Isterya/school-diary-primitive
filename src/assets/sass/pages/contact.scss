@@ -1,0 +1,113 @@
+@import '../base/main';
+
+.contact {
+   padding: 24px 0 48px 0;
+
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 12px;
+      padding: 48px;
+      min-height: 344px;
+      background: #242535;
+   }
+
+   &__author {
+      display: flex;
+      align-items: center;
+
+      img {
+         border-radius: 80px;
+         width: 64px;
+         height: 64px;
+      }
+
+      &-descr {
+         margin-left: 16px;
+         h3 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            color: #fff;
+         }
+
+         p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #bababf;
+         }
+      }
+   }
+
+   &__descr {
+      margin-top: 24px;
+      width: 668px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      color: #bababf;
+   }
+
+   &__portfolio {
+      border-radius: 4px;
+      width: 187px;
+      height: 48px;
+      margin-top: 24px;
+      display: flex;
+      background: #e5e7eb;
+      justify-content: center;
+      align-items: center;
+      font-weight: 400;
+      font-size: 16px;
+      color: #1f2937;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+         background: #1f2937;
+         color: #e5e7eb;
+         transform: translateY(-3px);
+         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+   }
+
+   &__links {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+      width: 152px;
+
+      li {
+         border-radius: 6px;
+         padding: 8px;
+         width: 32px;
+         height: 32px;
+         background: #696a75;
+         cursor: pointer;
+         transition: all 0.3s ease;
+
+         &:hover {
+            background-color: #4b6bfb;
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+         }
+
+         img {
+            width: 16px;
+            height: 16px;
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .contact {
+      &__descr {
+         width: 100%;
+      }
+   }
+}

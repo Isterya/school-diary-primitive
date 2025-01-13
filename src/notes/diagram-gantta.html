@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Dziennik | Diagram Gantta</title>
+
+    <link
+      rel="icon"
+      href="../assets/icons/favicon/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/css/pages/notes/diagram-gantta.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="menu">
+        <div class="menu-logo">
+          <a href="/">
+            <img
+              src="../assets/icons/logo.svg"
+              alt="logo-icon"
+            />
+          </a>
+        </div>
+
+        <div
+          class="hamburger"
+          id="hamburger-menu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </div>
+
+        <img
+          src="../assets/icons/close.svg"
+          alt="close-menu-icon"
+          class="close-menu-icon"
+          id="close-menu-icon"
+          style="display: none"
+        />
+
+        <nav
+          class="menu-wrapper"
+          id="menu-wrapper"
+        >
+          <ul class="menu-list">
+            <li class="menu__item">
+              <a href="../index.html">Główna</a>
+            </li>
+            <li class="menu__item">
+              <a href="../notes.html">Notatki</a>
+            </li>
+            <li class="menu__item">
+              <a href="../contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu-search">
+          <div class="menu-search__input">
+            <input
+              type="text"
+              placeholder="Wyszukiwanie"
+            />
+            <span class="menu-search__icon">
+              <img
+                src="../assets/icons/search.svg"
+                alt="search-icon"
+              />
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <section class="single-note">
+        <div class="single-note__wrapper">
+          <div class="single-note__tag">Projektowanie Oprogramowania</div>
+          <h1 class="single-note__title">Diagram Gantta</h1>
+          <div class="single-note__author">
+            <img
+              class="single-note__author-avatar"
+              src="../assets/img/profile-avatar.jpg"
+              alt="author"
+            />
+            <div class="single-note__author-name">Bohdan Yevsieiev</div>
+            <div class="single-note__author-date">January 13, 2025</div>
+          </div>
+          <img
+            src="../assets/img/post-img.jpg"
+            alt="note"
+            class="single-note__img"
+          />
+          <div class="single-note__text">
+            <p>
+              Diagram Gantta (znany też jako funkcjonalny wykres Gantta) to
+              graficzne narzędzie do planowania, harmonogramowania i
+              monitorowania projektów. Jego podstawowym celem jest wizualizacja
+              zadań składających się na projekt, zależności między nimi oraz
+              czasu potrzebnego, żeby je zrealizować.
+            </p>
+            <p>
+              Wykres składa się z osi czasu oraz poziomych pasków
+              reprezentujących poszczególne zadania. Każdy pasek ukazuje moment
+              rozpoczęcia i zakończenia danego zadania, a jego długość odpowiada
+              czasowi trwania danej aktywności
+            </p>
+            <p>
+              Diagram Gantta jest szczególnie przydatny w
+              <strong>zarządzaniu projektami</strong>, ponieważ umożliwia
+              identyfikację najważniejszych elementów harmonogramu,
+              potencjalnych opóźnień oraz zależności między zadaniami. Dzięki
+              temu menedżerowie projektów mogą efektywnie alokować zasoby,
+              kontrolować postęp prac i reagować na ewentualne trudności.
+              Narzędzie to jest szeroko wykorzystywane w różnych branżach,
+              takich jak budownictwo, informatyka czy produkcja.
+            </p>
+
+            <h2>Historia diagramu Gantta</h2>
+            <p>
+              Historia wykresu Gantta zaczyna się z amerykańskim inżynierem i
+              konsultantem zarządzania, Henry’m L. Ganttem, który opracował jego
+              podstawowe zasady na początku XX wieku. Pierwsze prace nad tym
+              narzędziem zaczęły się około 1910 roku, gdy Gantt pracował nad
+              metodami usprawnienia procesów zarządzania czasem i produkcją w
+              przemyśle. Jego celem było stworzenie narzędzia, które ułatwiłoby
+              menedżerom wizualizację harmonogramów pracy i kontrolowanie
+              postępu operacji.
+            </p>
+            <p>
+              Pierwowzór wykresu był stosunkowo prosty i polegał na
+              przedstawieniu sekwencji działań w formie graficznej na osi czasu.
+              Wczesne wersje tworzono ręcznie na papierze lub tablicach, co
+              czyniło je czasochłonnymi w aktualizacji, ale nie zmienia to
+              faktu, że były one rewolucyjne w swojej prostocie.
+            </p>
+            <p>
+              W czasie I wojny światowej diagram Gantta zaadaptowała na swoje
+              potrzeby armia Stanów Zjednoczonych, która użyła go do zarządzania
+              dużymi operacjami logistycznymi, takimi jak produkcja broni i
+              zaopatrzenia. Popularność narzędzia rosła dzięki jego skuteczności
+              w komunikacji skomplikowanych harmonogramów.
+            </p>
+            <p>
+              W połowie XX wieku rozwój komputerów przyczynił się do dalszych
+              prac z wykorzystaniem wykresu Gantta. Wprowadzenie oprogramowania
+              do zarządzania działalnością biznesową umożliwiło łatwe
+              kierownikom projektów tworzenie i modyfikowanie wykresów, a
+              programy, takie jak Microsoft Project, które pojawiły się w latach
+              80. XX wieku, zautomatyzowały wiele procesów związanych z
+              tworzeniem i aktualizacją diargamów Gantta, co znacznie zwiększyło
+              ich dostępność i popularność.
+            </p>
+
+            <h2>Elementy diagramu Gantta</h2>
+            <p>Diagram Gantta składa się z następujących elementów:</p>
+            <p>
+              <strong>Oś czasu (horyzontalna)</strong><br />
+
+              Oś pozioma wykresu reprezentuje upływ czasu. Jest podzielona na
+              jednostki czasowe, takie jak dni, tygodnie, miesiące lub lata, w
+              zależności od skali operacji. Widok osi czasu pozwala dokładnie
+              określić czas realizacji zadania, od momentu czasu rozpoczęcia do
+              zakończenia każdego z nich. Oś czasu jest podstawą organizacji
+              całego wykresu i definiuje przebieg projektu. Nie tylko pozwala
+              monitorować mniejsze zadania w czasie, ale również ułatwia
+              zrozumienie czasowych zależności złożonych projektów.
+            </p>
+
+            <p>
+              <strong>Lista zadań (wertykalna)</strong><br />
+
+              Oś pionowa zawiera listę wszystkich zadań, etapów lub działań
+              składających się na dany zbiór zadań. Są one uporządkowane w
+              logicznej kolejności, często grupowane w zależności od ich
+              kategorii lub powiązań. Każde działanie jest przypisane do
+              konkretnego wiersza, co umożliwia jego indywidualne przedstawienie
+              na wykresie. Umożliwia to też znaleźć zadania wykonywane
+              równolegle oraz ustalić kolejność zadań.
+            </p>
+
+            <p>
+              <strong>Paski zadań (poziome)</strong><br />
+
+              Głównym elementem wizualnym wykresu Gantta są poziome paski, które
+              ilustrują czas trwania zadań. Długość każdego paska odpowiada
+              czasowi potrzebnemu na wykonanie zadania, a jego położenie na osi
+              czasu wskazuje moment rozpoczęcia i zakończenia. Wypełnienie lub
+              kolorowanie paska może wskazywać poziom zaawansowania zadania.
+            </p>
+
+            <p>
+              <strong>Zależności między zadaniami </strong><br />
+
+              W bardziej zaawansowanych wykresach Gantta uwzględniane są
+              zależności pomiędzy zadaniami, które są przedstawiane w formie
+              strzałek lub linii łączących paski. Takie zależności wskazują,
+              które zadania muszą zostać zakończone przed początkiem kolejnych
+              (relacje typu „koniec-początek”) lub które mogą być realizowane
+              równolegle. Ułatwia to planowanie zadań, a także mierzenie czasu
+              pracy, ponieważ dzięki zależnościom wiadomo, że np. niektóre
+              działania nie zaczną się, dopóki nie zakończą się inne.
+            </p>
+
+            <p>
+              <strong>Punkty kontrolne</strong><br />
+
+              Punkty kontrolne, zwane również
+              <strong>kamieniami milowymi</strong>, reprezentują ważne momenty
+              działalności, takie jak zakończenie etapu, dostarczenie produktu
+              lub inne istotne wydarzenie. Na obszarze wykresu są zazwyczaj
+              oznaczone w formie symboli, takich jak romby lub kropki, i nie
+              posiadają długości, ponieważ nie zajmują czasu w harmonogramie.
+            </p>
+
+            <p>
+              <strong>Postęp realizacji zadań</strong><br />
+
+              W celu monitorowania projektu wykres może przedstawiać stopień
+              realizacji zadań w formie wizualnej. Na przykład pasek zadania
+              może być częściowo wypełniony, co wskazuje, jaka część zadania
+              została już wykonana. Czas realizacji zadania może być również
+              oznaczony procentowo lub za pomocą dodatkowych znaczników.
+            </p>
+
+            <p>
+              <strong>Ścieżka krytyczna (opcjonalna)</strong><br />
+
+              W bardziej złożonych projektach diagram Gantta może zawierać
+              wizualizację ścieżki krytycznej, czyli sekwencji zadań, które
+              bezpośrednio wpływają na termin realizacji. Działania należące do
+              tej ścieżki są zazwyczaj wyróżnione innym kolorem.
+            </p>
+
+            <p>
+              <strong>Zasoby przypisane do zadań </strong><br />
+
+              W niektórych wersjach diagramu Gantta możliwe jest przedstawienie
+              zasobów przypisanych do zadań, takich jak członkowie zespołu,
+              narzędzia czy materiały. Informacje można umieścić obok nazw zadań
+              lub w oddzielnych sekcjach.
+            </p>
+
+            <p>
+              <strong>Linia czasu aktualnego dnia</strong><br />
+
+              Na wielu diagramach Gantta widoczna jest pionowa linia wskazująca
+              bieżący dzień lub jednostkę czasu w harmonogramie. Pomaga to w
+              szybkiej ocenie aktualnego postępu projektu względem planowanego
+              harmonogramu.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__about-us">
+          <h3>Informacje</h3>
+          <p class="footer__descr">
+            Dziennik ucznia z notatkami na temat „Projektowanie Oprogramowania”.
+            Wykonany z miłością i duszą.
+          </p>
+          <div class="footer__contact">
+            <p>
+              <span>Email : </span>
+              <a href="mailto:by.connectme@gmail.com">by.connectme@gmail.com</a>
+            </p>
+            <p>
+              <span>Telegram : </span>
+              <a href="http://t.me/perfectn1ght">@perfectn1ght</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h3>Quick Link</h3>
+          <ul>
+            <li>
+              <a href="../index.html">Główna</a>
+            </li>
+            <li>
+              <a href="../notes.html">Notatki</a>
+            </li>
+            <li>
+              <a href="../contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__newsletter">
+          <h3>Regularny Mailing</h3>
+          <p>Otrzymuj artykuły z bloga pocztą e-mail</p>
+
+          <form
+            id="newsletter-form"
+            class="footer__form"
+          >
+            <div class="footer__input">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Twój e-mail"
+                required
+              />
+              <span class="footer__input-icon">
+                <img
+                  src="../assets/icons/mail.svg"
+                  alt="mail-icon"
+                />
+              </span>
+            </div>
+            <button
+              type="submit"
+              class="footer__btn"
+            >
+              Subskrybuj
+            </button>
+          </form>
+          <p
+            id="status-message"
+            class="status-message"
+          ></p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <a href="/">
+          <img
+            src="../assets/icons/footer-logo.svg"
+            alt="footer-logo"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init('zlBD2yNWHqskn7PB6');
+      })();
+    </script>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

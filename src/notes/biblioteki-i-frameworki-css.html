@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Dziennik | Biblioteki i frameworki CSS</title>
+
+    <link
+      rel="icon"
+      href="../assets/icons/favicon/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/css/pages/notes/biblioteki-i-frameworki-css.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="menu">
+        <div class="menu-logo">
+          <a href="../index.html">
+            <img
+              src="../assets/icons/logo.svg"
+              alt="logo-icon"
+            />
+          </a>
+        </div>
+
+        <div
+          class="hamburger"
+          id="hamburger-menu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </div>
+
+        <img
+          src="../assets/icons/close.svg"
+          alt="close-menu-icon"
+          class="close-menu-icon"
+          id="close-menu-icon"
+          style="display: none"
+        />
+
+        <nav
+          class="menu-wrapper"
+          id="menu-wrapper"
+        >
+          <ul class="menu-list">
+            <li class="menu__item"><a href="../index.html">Główna</a></li>
+            <li class="menu__item"><a href="../notes.html">Notatki</a></li>
+            <li class="menu__item"><a href="../contact.html">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <div class="menu-search">
+          <div class="menu-search__input">
+            <input
+              type="text"
+              placeholder="Wyszukiwanie"
+            />
+            <span class="menu-search__icon">
+              <img
+                src="../assets/icons/search.svg"
+                alt="search-icon"
+              />
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <section class="single-note">
+        <div class="single-note__wrapper">
+          <div class="single-note__tag">Projektowanie Oprogramowania</div>
+          <h1 class="single-note__title">Biblioteki i frameworki CSS</h1>
+          <div class="single-note__author">
+            <img
+              class="single-note__author-avatar"
+              src="../assets/img/profile-avatar.jpg"
+              alt="author"
+            />
+            <div class="single-note__author-name">Bohdan Yevsieiev</div>
+            <div class="single-note__author-date">14 maja 2025</div>
+          </div>
+          <img
+            src="../assets/img/css-frameworks-post.jpg"
+            alt="note"
+            class="single-note__img"
+          />
+
+          <div class="single-note__text">
+            <p>
+              <strong>Biblioteki i frameworki CSS</strong> to narzędzia, które
+              znacząco przyspieszają i upraszczają proces tworzenia interfejsów
+              użytkownika. Zamiast pisać stylizację od zera, programista może
+              skorzystać z gotowych komponentów i klas CSS, dzięki czemu zyskuje
+              na czasie, zachowując przy tym spójność i estetykę projektu.
+            </p>
+
+            <h2>Biblioteki CSS</h2>
+            <p>
+              Biblioteki CSS to zbiory gotowych stylów, klas i komponentów,
+              które można wykorzystywać w projektach bez konieczności pisania
+              własnego kodu od podstaw.
+            </p>
+            <p>Przykładowe biblioteki CSS:</p>
+            <ul>
+              <li>
+                <strong>Animate.css</strong> – prosta biblioteka animacji,
+                dodająca efekty do elementów.
+              </li>
+              <li>
+                <strong>Hover.css</strong> – kolekcja efektów hover dla linków,
+                przycisków i obrazków.
+              </li>
+              <li>
+                <strong>Normalize.css</strong> – resetuje i normalizuje domyślne
+                style przeglądarki.
+              </li>
+            </ul>
+
+            <h2>Frameworki CSS</h2>
+            <p>
+              Frameworki CSS to bardziej rozbudowane rozwiązania niż biblioteki.
+              Zawierają siatki (grid), komponenty UI (np. przyciski, formularze,
+              modale), systemy typografii oraz narzędzia pomocnicze.
+            </p>
+
+            <p>Najpopularniejsze frameworki CSS:</p>
+            <ul>
+              <li>
+                <strong>Bootstrap</strong> – najczęściej używany framework,
+                zawiera gotowe komponenty, system siatek i wspiera
+                responsywność.
+              </li>
+              <li>
+                <strong>Tailwind CSS</strong> – nowoczesny framework oparty na
+                klasach narzędziowych (utility-first), umożliwia tworzenie
+                stylów bez pisania tradycyjnego CSS.
+              </li>
+              <li>
+                <strong>Bulma</strong> – lekki i responsywny framework z czystą
+                składnią i systemem kolumn.
+              </li>
+              <li>
+                <strong>Foundation</strong> – solidny framework tworzony przez
+                Zurb, bardziej zaawansowany i elastyczny.
+              </li>
+            </ul>
+
+            <h2>Różnice między biblioteką a frameworkiem</h2>
+            <p>
+              Główna różnica polega na tym, że biblioteka CSS dostarcza zestaw
+              gotowych klas i stylów do konkretnych zadań, natomiast framework
+              to kompletne środowisko pracy, które narzuca strukturę i sposób
+              tworzenia front-endu.
+            </p>
+
+            <p>
+              <strong>Biblioteka:</strong> możesz z niej korzystać elastycznie,
+              dodając tylko potrzebne fragmenty.<br />
+              <strong>Framework:</strong> często wymaga przyjęcia określonego
+              podejścia do budowy aplikacji.
+            </p>
+
+            <h2>Zalety korzystania z frameworków i bibliotek CSS</h2>
+            <ul>
+              <li>Przyspieszają proces tworzenia interfejsów użytkownika.</li>
+              <li>Zwiększają spójność i jakość wizualną projektu.</li>
+              <li>Redukują liczbę błędów i powielania kodu.</li>
+              <li>Wspierają responsywność i dostępność (a11y).</li>
+              <li>Mają bogatą dokumentację i społeczność.</li>
+            </ul>
+
+            <h2>Kiedy używać?</h2>
+            <p>
+              Jeśli tworzysz szybki prototyp lub aplikację, w której wygląd nie
+              musi być unikalny – użycie frameworka to doskonały wybór.
+              Natomiast w projektach wymagających indywidualnego stylu lub
+              pełnej kontroli nad kodem – warto rozważyć własne rozwiązania lub
+              lekkie biblioteki.
+            </p>
+
+            <p>
+              Podsumowując – biblioteki i frameworki CSS są potężnymi
+              narzędziami w arsenale każdego webdevelopera. Wybór odpowiedniego
+              zależy od potrzeb projektu, doświadczenia oraz stopnia złożoności
+              aplikacji.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__about-us">
+          <h3>Informacje</h3>
+          <p class="footer__descr">
+            Dziennik ucznia z notatkami na temat „Projektowanie Oprogramowania”.
+            Wykonany z miłością i duszą.
+          </p>
+          <div class="footer__contact">
+            <p>
+              <span>Email : </span
+              ><a href="mailto:by.connectme@gmail.com"
+                >by.connectme@gmail.com</a
+              >
+            </p>
+            <p>
+              <span>Telegram : </span
+              ><a href="http://t.me/perfectn1ght">@perfectn1ght</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h3>Quick Link</h3>
+          <ul>
+            <li><a href="../index.html">Główna</a></li>
+            <li><a href="../notes.html">Notatki</a></li>
+            <li><a href="../contact.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__newsletter">
+          <h3>Regularny Mailing</h3>
+          <p>Otrzymuj artykuły z bloga pocztą e-mail</p>
+          <form
+            id="newsletter-form"
+            class="footer__form"
+          >
+            <div class="footer__input">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Twój e-mail"
+                required
+              />
+              <span class="footer__input-icon">
+                <img
+                  src="../assets/icons/mail.svg"
+                  alt="mail-icon"
+                />
+              </span>
+            </div>
+            <button
+              type="submit"
+              class="footer__btn"
+            >
+              Subskrybuj
+            </button>
+          </form>
+          <p
+            id="status-message"
+            class="status-message"
+          ></p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <a href="../index.html">
+          <img
+            src="../assets/icons/footer-logo.svg"
+            alt="footer-logo"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init('zlBD2yNWHqskn7PB6');
+      })();
+    </script>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
